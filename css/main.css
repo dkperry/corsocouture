@@ -1,0 +1,264 @@
+/* {
+	border: 1px solid red !important;
+}
+*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+	html, body, grid {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#nav-row {
+		display: none;
+	}
+
+	* {
+		text-align: center !important;
+	}
+
+	.col-4 {
+		min-width: 100%;
+		width: 100%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	
+}
+
+#drawer {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	background-color: #555;
+	opacity: .9;
+	-webkit-transform: translate(-260px, 0);
+	transform: translate(-260px, 0);
+	transition: transfrom 0.3s ease;
+}
+
+#drawer.open {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0,0);
+}
+
+body {
+	background: url("../img/site_background.jpg") left top repeat;
+}
+
+.foot-row {
+	margin-top: 1em;
+	margin-bottom: 1em;
+    color: #000;
+}
+
+.center-vert {
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+}
+
+.nav-list-footer a {
+	color: #000;
+    text-decoration: none;
+	font-style: italic;
+}
+
+.nav-item-footer a:visited {
+	color: #000;
+}
+
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-3-right {
+	width: 25%;
+	text-align: right;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+p {
+	margin: 10px;
+}
+
+.logo {
+	//margin: 10px;
+	//margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.site-logo {
+	width: 75px;
+	height: auto;
+	float: left;
+}
+
+#burgerMenu {
+	display: none;
+	margin-top: 10px;
+}
+
+.burgerIcon {
+	width: 30px;
+	height: auto;
+}
+
+.header-title {
+	font-family: Edwardian Script ITC;
+	font-size: 5em;
+	color: #999;
+	text-align: right;
+	padding-right: .1em;
+}
+
+.horiz-rule {
+	color: #333;
+	margin: 0px;
+}
+
+.nav-list {
+	margin: 5px;
+	text-align: right;
+	color: #999;
+	padding-right: 10px;
+	padding-bottom: 0px;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: #999;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: .5em;
+	padding-right: .5em;
+	min-width: 48px;
+	min-height: 48px;
+}
+
+.main {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #ccc;
+	opacity: .8;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.main-intro {
+	width: 85%;
+	margin: 2em auto 2em auto;
+	padding: .2em;
+	display: flex;
+	background: #222;
+}
+
+.main-intro-text {
+	color: #999;
+	padding: 1em;
+
+}
+
+.main-intro-image {
+	margin: auto;
+}
+
+.main-image img {
+	width: 350px;
+	height: auto;
+}
+
+.main-content {
+	margin-bottom: 2em;
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.main-content p {
+	text-indent: 30px;
+	text-align: left;
+}
+
+.text_strong {
+    font-weight: 700 !important;
+}
+
+.contact-link {
+	color: #000;
+	//text-decoration: none;
+	font-style: italic;
+}
+
