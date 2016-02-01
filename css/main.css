@@ -100,6 +100,11 @@ body {
 	width: 16.66%;
 }
 
+.col-2-left {
+	width: 16.66%;
+	text-align: left;
+}
+
 .col-3 {
 	width: 25%;
 }
@@ -135,6 +140,11 @@ body {
 
 .col-10 {
 	width: 83.33%
+}
+
+.col-10-left {
+	width: 83.33%;
+	text-align: left;
 }
 
 .col-11 {
@@ -260,5 +270,43 @@ p {
 	color: #000;
 	//text-decoration: none;
 	font-style: italic;
+}
+
+.contact-form {
+	width: 80%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.form-row {
+	height: 50px;
+}
+
+.form-row-comments {
+	height: 150px;
+}
+
+.contact-form input {
+	text-align: left;
+	font-size: 1em;
+	width: 200px;
+	height: 30px;
+}
+
+.form-input.tel {
+	width: 50px;
+}
+
+.contact-form textarea {
+	text-align: left;
+	font-size: 1em;
+	width: 450px;
+	height: 125px;
+}
+
+#button-submit {
+	text-align: center;
+	width: 80px;
+	height: 48px;
 }
 
