@@ -48,7 +48,7 @@
               <p>Please contact us with any questions regarding Corso Couture, available puppies, upcoming litters, etc.</p>
             </div>
             <div class="row">
-              <form class="contact-form" name="contactForm" ng-model="contactForm" action="POST">
+              <form class="contact-form" name="contactForm" ng-model="contactForm" action="contact.php" method="post">
                 <div class="row form-row">
                   <div class="col-2-left">
                     <label class="form-label" for="contactName">Name</label>
@@ -70,7 +70,7 @@
                     <label class="form-label" for="phone">Phone</label>
                   </div>
                   <div class="col-10-left">
-                    (<input type="tel" maxlength="3" size="3" id="phone" name="phone" class="form-input tel" required>) <input type="tel" maxlength="3" size="3" id="phone-pre" class="form-input tel" required> - <input type="tel" maxlength="4" size="4" class="form-input tel" required>
+                    <input type="tel" maxlength="12" size="20" id="phone" name="phone" class="form-input tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> (XXX-XXX-XXXX)
                   </div>
                 </div>
                 <div class="row form-row-comments">
@@ -78,13 +78,13 @@
                     <label class="form-label" for="comments" required>Comments</label>
                   </div>
                   <div class="col-10-left">
-                    <textarea id="comments" name="comments" ng-model="comments" class="form-input"required></textarea>
+                    <textarea id="comments" name="comments" ng-model="comments" class="form-input" required></textarea>
                   </div>
                 </div>
                 <div class="row form-row">
                   <div class="col-2"></div>
                   <div class="col-10-left">
-                    <input type="submit" id="button-submit" value="Submit" ng-disabled="{{contactForm.$invalid}}">
+                    <input type="submit" id="submit" value="Submit">
                   </div>
                 </div>
               </form>
