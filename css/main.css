@@ -53,14 +53,19 @@
 	transform: translate(0,0);
 }
 
-body {
-	background: url("../img/site_background.jpg") left top repeat;
+html {
+    	background: url("../img/site-background.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;;
 }
 
 .foot-row {
 	margin-top: 1em;
 	margin-bottom: 1em;
-    color: #000;
+    	color: #000;
+    	text-shadow: 1px 1px #888;
 }
 
 .center-vert {
@@ -71,12 +76,18 @@ body {
 
 .nav-list-footer a {
 	color: #000;
-    text-decoration: none;
+    	text-decoration: none;
 	font-style: italic;
 }
 
 .nav-item-footer a:visited {
 	color: #000;
+}
+
+main {
+    background: #333;
+    padding: 15px;
+    margin: 10px 0;
 }
 
 .grid {
@@ -160,8 +171,6 @@ p {
 }
 
 .logo {
-	//margin: 10px;
-	//margin-bottom: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	max-width: 100%;
@@ -188,7 +197,8 @@ p {
 .header-title {
 	font-family: Edwardian Script ITC;
 	font-size: 5em;
-	color: #999;
+    	color: #000;
+    	text-shadow: 1px 1px #888;
 	text-align: right;
 	padding-right: .1em;
 }
@@ -201,14 +211,16 @@ p {
 .nav-list {
 	margin: 5px;
 	text-align: right;
-	color: #999;
+    	color: #000;
+    	text-shadow: 1px 1px #888;
 	padding-right: 10px;
 	padding-bottom: 0px;
 }
 
 .nav-list a {
 	text-decoration: none;
-	color: #999;
+    	color: #000;
+    	text-shadow: 1px 1px #888;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	padding-left: .5em;
@@ -218,13 +230,10 @@ p {
 }
 
 .main {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background: #ccc;
-	opacity: .8;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	background-color: rgba(204,204,204, .8);
 }
 
 .main-intro {
