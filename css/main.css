@@ -288,25 +288,40 @@ p {
 
 .contact-form input {
 	text-align: left;
-	font-size: 1em;
-	width: 200px;
-	height: 30px;
+	font-size: 1.2em;
+	padding: 3px;
+	width: 300px;
+	height: 40px;
 }
 
 .form-input.tel {
-	width: 50px;
+	width: 200px;
 }
 
 .contact-form textarea {
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.2em;
 	width: 450px;
 	height: 125px;
+	padding: 5px;
 }
 
-#button-submit {
+#submit {
 	text-align: center;
+	font-size: 1.2em;
 	width: 80px;
 	height: 48px;
 }
 
+figure {
+	width: 100%;
+}
+
+.profile-pic {
+	height: auto;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+	display: block;
+}
